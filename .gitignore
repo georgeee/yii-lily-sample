@@ -4,7 +4,7 @@
 /protected/extensions
 /assets
 /.idea
-/protected/framework/
+/protected/framework
 /protected/config/main.php
 /protected/config/console.php
 /protected/config/db.php

@@ -12,7 +12,7 @@ Lily requires several extensions to be installed:
  * [EOAuth (required by EAuth)](http://www.yiiframework.com/extension/eoauth, "Yii EOAuth extension") 
  * [Loid extension (required by EAuth)](http://www.yiiframework.com/extension/loid "Yii loid extension")
  * [Yii mail (in order to send notification and activation mails for email authentication type)](http://www.yiiframework.com/extension/mail/ "Yii mail extension")
- * [EAuth][]
+ * [EAuth](https://github.com/Nodge/yii-eauth)
  * [Lily](https://github.com/georgeee/yii-lily)
 
 Installation instructions
@@ -23,7 +23,9 @@ Installation instructions
 3. Download extensions listed above and put them into `protected/extensions`.
 4. Put `framework` directory (or symbolic link to it) into `protected`
 5. Deploy your database (here code is shown for mysql), put corresponding code into db section of config:
- ```php
+
+```php
+<?php
  	'db'=>array(
 			'connectionString' => 'mysql:host=localhost;dbname=lily-sample',
 			'emulatePrepare' => true,
@@ -31,7 +33,7 @@ Installation instructions
 			'password' => '****',
 			'charset' => 'utf8',
 		),
- ```
+```
 6. Deploy the DB tables:
     1. `./yiic migrate --migrationPath=ext.lily.migrations --migrationTable=lily_migration up`
     2. `./yiic migrate up`
