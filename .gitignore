@@ -1,0 +1,10 @@
+*~
+/nbproject/private/
+/protected/runtime
+/protected/extensions
+/assets
+/.idea
+/protected/framework/
+/protected/config/main.php
+/protected/config/console.php
+/protected/config/db.php

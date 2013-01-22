@@ -1,0 +1,9 @@
+ul.artileProps{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+ul.artileProps li{
+    display: block;
+    margin-right:5px;
+}
