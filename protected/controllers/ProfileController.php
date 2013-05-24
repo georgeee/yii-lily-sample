@@ -94,7 +94,7 @@ class ProfileController extends Controller {
      * @throws CHttpException
      */
     public function loadModel($id) {
-        $model = Profile::model()->findByPk($id);
+        $model = Profile::model()->findByAttributes(array('uid' => $id));
         if ($model === null)
             throw new CHttpException(404, 'The requested page does not exist.');
         return $model;

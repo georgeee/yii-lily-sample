@@ -40,9 +40,9 @@ Installation instructions
     3. Create authManager tables into your DB. You can do it by importing protected/data/authManager.sql
 7. Initialize RBAC structure:
     1. Run `./yiic lily_rbac`, it will install Lily's RBAC structure
-    2. Run `./yiic lily_rbac assign --user {uid} --role {role, default userAdmin}` to assign role to a user
+    2. Run `./yiic lily_rbac assign --user={uid} --role={role, default userAdmin}` to assign role to a user
     3. Run `./yiic rbac_installer`, it will install app's RBAC structure
-    4. Run `./yiic rbac_installer assign --user {uid} --role {role, default articleAdmin}` to assign role to a user
+    4. Run `./yiic rbac_installer assign --user={uid} --role={role, default articleAdmin}` to assign role to a user
 
 8. Edit config/main.php, fill in your service data, configure yii-mail extension
 

@@ -56,6 +56,12 @@ class AuthInstaller extends CConsoleCommand {
 
     public function actionAssign($user, $role = 'articleAdmin') {
         $auth = Yii::app()->authManager;
+        
+        if ($auth->isAssigned($role, $user)) {
+            echo $role . ' role already assigned for user ' . $user . PHP_EOL;
+            return;
+        }
+        
         $auth->assign($role, $user);
         $auth->save();
     }
